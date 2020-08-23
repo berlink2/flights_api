@@ -1,11 +1,4 @@
 import mongoose from "mongoose";
-
-// flightNumber eg. QF400
-// departurePort eg. MEL
-// arrivalPort eg. SYD
-// departureTime eg. UTC ISO8601 format 2020-06-10T09:00:23Z
-// arrivalTime eg. UTC ISO8601 format 2020-06-10T10:25:23Z
-
 interface FlightAttrs {
   airlineCode: string;
   flightNumber: string;

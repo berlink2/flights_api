@@ -4,11 +4,13 @@ import { Flight } from "../models/flight";
 const router = express.Router();
 
 router.get("/flights", async (req: Request, res: Response) => {
-  const flights = await Flight.find({});
+  const flightArray = await Flight.find({});
 
-  if (flights.length === 0) {
+  if (flightArray.length === 0) {
     res.status(404).send({ message: "No flights found" });
   }
-
-  res.status(200).send(JSON.stringify(flights));
+  const send = { flights: flightArray };
+  res.status(200).send(JSON.stringify(send));
 });
+
+export { router as getFlightsRouter };

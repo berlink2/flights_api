@@ -4,8 +4,8 @@ import { Flight } from "../models/flight";
 const router = express.Router();
 
 router.get("/flights/:code", async (req: Request, res: Response) => {
-  const flightCode = req.params.code;
-  const flights = await Flight.find({});
+  const airlineCode = req.params.code;
+  const flights = await Flight.find({ airlineCode });
 
   if (flights.length === 0) {
     res.status(404).send({ message: "No flights found" });
@@ -13,3 +13,5 @@ router.get("/flights/:code", async (req: Request, res: Response) => {
 
   res.status(200).send(JSON.stringify(flights));
 });
+
+export { router as getFlightsByCodeRouter };
