@@ -26,6 +26,8 @@ or
 
 > npm run dev
 
+The server will be running at http://localhost:4000/ which you can utilize for testing the api manually.
+
 5. In order to run the tests, in the root folder execute in the terminal
 
 > yarn test
