@@ -1,6 +1,7 @@
 import request from "supertest";
 import { app } from "../../app";
 import { Flight } from "../../models/flight";
+
 const flightArray = [
   {
     airlineCode: "TA",

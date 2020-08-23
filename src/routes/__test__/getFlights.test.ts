@@ -1,13 +1,6 @@
 import request from "supertest";
 import { app } from "../../app";
 import { Flight } from "../../models/flight";
-import mongoose from "mongoose";
-// # flightCode eg. QF
-// # flightNumber eg. QF400
-// # departurePort eg. MEL
-// # arrivalPort eg. SYD
-// # departureTime eg. UTC ISO8601 format 2020-06-10T09:00:23Z
-// # arrivalTime eg. UTC ISO8601 format 2020-06-10T10:25:23Z
 
 const flightArray = [
   {
