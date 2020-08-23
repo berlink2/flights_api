@@ -3,7 +3,7 @@
 
 
 ## Instructions for running application
-1. Install dependencies with yarn or npm with current directory set to project root folder (where package.json is). Make sure typescript version is <4.0.0
+1. Install dependencies with yarn or npm with current directory set to project root folder (where package.json is). Make sure typescript version is <4.0.0 and > 3.8.0
 > yarn
 
 or
