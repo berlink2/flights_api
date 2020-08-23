@@ -26,6 +26,8 @@ or
 
 > npm run dev
 
+The server will be running at http://localhost:4000/ which you can utilize for testing the api manually.
+
 5. In order to run the tests, in the root folder execute in the terminal
 
 > yarn test
@@ -38,4 +40,6 @@ or
 
 1. A high-level integration design explanation on how you would see your solution’s architecture
 being implemented in a production environment (a few sentences or single diagram)
+
+In order to implement this api into a production environment, numerous adjustments need to be made with respect to security, robustness, and useful funcitonality. For security  the api should implement authentication for accessing the api. This can be done by requiring api requests to have a token or api key so that the only one who can access the api are those with permission. Further, rate limiting should be implemented in the api to prevent the api from crumbling if requested too often. This can be done in the server or via a reverse proxy/load balancer such as nginx, the latter would be more ideal as it does not involve tampering with the api directly. Furthermore, more endpoints should be implemented to the api so that the flights database can be utilized more such as looking for flights that departed or arrived at certain dates or locations. The api could also serve to hold more relevant data such as flight cost, price per ticket, or how many of the seats of the flight were occupied, and so on. Lastly, the api should be implemented as a part of a serverless framework so that we can scale required insfrastructure for the api according to needs and how often the api is utilized.
 
