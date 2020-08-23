@@ -3250,7 +3250,15 @@ mongodb-memory-server-core@6.6.4:
   optionalDependencies:
     mongodb "^3.5.9"
 
-mongodb-memory-server@^6.6.4:
+mongodb-memory-server-global@^6.6.4:
+  version "6.6.4"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server-global/-/mongodb-memory-server-global-6.6.4.tgz#a2a21a64c5ef46d52680e7d7fdbc39f335fce43d"
+  integrity sha512-snzlHQLLyqjtfFTabTVuZ9ujbrX+EexXG+puDAYbzC6cY+kS7m+do9k0uCizPrT+BpU+29jm2VuWGct7Js25GA==
+  dependencies:
+    mongodb-memory-server "6.6.4"
+    os "^0.1.1"
+
+mongodb-memory-server@6.6.4, mongodb-memory-server@^6.6.4:
   version "6.6.4"
   resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-6.6.4.tgz#c39b62e34d475458d682c418d347839ae9196329"
   integrity sha512-GCtrlUDpq6oPkdlkmIgh0Q6vJYf7njzw8AJnbg/gime2NxuUtqcOK2n+9L3qeDzt6EZxdtP/+1u/80wfjwc5mA==
@@ -3483,6 +3491,11 @@ optionator@^0.8.1:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
     word-wrap "~1.2.3"
+
+os@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/os/-/os-0.1.1.tgz#208845e89e193ad4d971474b93947736a56d13f3"
+  integrity sha1-IIhF6J4ZOtTZcUdLk5R3NqVtE/M=
 
 p-each-series@^2.1.0:
   version "2.1.0"

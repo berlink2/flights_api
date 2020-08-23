@@ -10,7 +10,7 @@ router.get("/flights", async (req: Request, res: Response) => {
     res.status(404).send({ message: "No flights found" });
   }
   const send = { flights: flightArray };
-  res.status(200).send(JSON.stringify(send));
+  res.status(200).send(send);
 });
 
 export { router as getFlightsRouter };

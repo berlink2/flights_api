@@ -1,14 +1,9 @@
 import mongoose from "mongoose";
 import { app } from "./app";
-import { MongoMemoryServer } from "mongodb-memory-server";
-// import dotenv from "dotenv";
-// dotenv.config();
+
 const start = async () => {
   try {
     //connect to db
-    // const mongo = new MongoMemoryServer();
-    // const mongoURI = await mongo.getUri();
-
     await mongoose.connect(process.env.MONGO_URI as string, {
       useNewUrlParser: true,
       useUnifiedTopology: true,

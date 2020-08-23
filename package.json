@@ -3,14 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "config": {
-    "mongodbMemoryServer": {
-      "version": "latest"
-    }
-  },
   "scripts": {
     "dev": "ts-node-dev --poll src/index.ts",
-    "test": "jest --watchAll --no-cache"
+    "test": "jest  --watchAll --no-cache --runInBand --detectOpenHandles"
   },
   "jest": {
     "preset": "ts-jest",
@@ -35,6 +30,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
+    "mongodb-memory-server-global": "^6.6.4",
     "mongoose": "^5.10.0",
     "ts-node-dev": "^1.0.0-pre.60",
     "typescript": "3.8.3"
